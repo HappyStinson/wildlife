@@ -7,5 +7,10 @@
         public string BodyCover { get; set; }
         public string PreferedFood { get; set; }
         public int LifeSpan { get; set; }
+
+        public Animal(string species)
+        {
+            Species = species;
+        }
     }
 }
