@@ -44,7 +44,6 @@ namespace Wildlife
             dogs.Add(new Dog());
             var dog = new Dog("Pitbull", domestic: false);
             dogs.Add(dog);
-            // dogs.Add(new Horse());
             Console.WriteLine("SHOWING ALL DOGS:");
             Console.WriteLine("-----------------");
             PrintElements(dogs);
@@ -58,22 +57,6 @@ namespace Wildlife
             Console.WriteLine("SHOWING ALL BIRDS:");
             Console.WriteLine("------------------");
             PrintElements(animals, taxonomyClass: "Aves");
-
-            // FRÅGOR
-            // Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
-            // Svar: Det går inte att konvertera en Horse att passa mallen för klass Dog eftersom det är olika klasser.
-
-            // Vilken typ måste listan lagra för att dessa tre nya klasser ska kunna lagras tillsammans?
-            // Svar: Pelican, Flamingo och Swan måste lagras i en lista av typen Bird vilket är den gemensamma basklassen.
-
-            // Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
-            // Svar: Typen Animal krävs för att lagra alla olika djur i samma lista eftersom det är den gemensamma basklass som alla djur ärver ifrån.
-
-            // Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut, i vilken klass bör vi lägga det?
-            // Svar: Om ändringen gäller samtliga fåglar ska det ändras i Bird för att bara ändra på ett ställe.
-
-            // Om alla djur behöver det nya attributet, vart skulle man lägga det då?
-            // Svar: Om ändringen gäller samtliga djur ska det ändras i Animal för att bara ändra på ett ställe.
         }
 
         private static void PrintElements(List<Animal> animals)

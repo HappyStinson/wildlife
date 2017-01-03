@@ -5,7 +5,6 @@
         public bool Domestic { get; private set; }
 
         public Dog() : base("Dog", "Mammalia") { }
-
         public Dog(string species, bool domestic) : base(species, "Mammalia")
         {
             base.Initialize("Fur", "Dentastix", 17);
