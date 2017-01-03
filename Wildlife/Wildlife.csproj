@@ -44,10 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animalia\Animal.cs" />
-    <Compile Include="Animalia\Bird.cs" />
-    <Compile Include="Animalia\Dog.cs" />
-    <Compile Include="Animalia\Hedgehog.cs" />
-    <Compile Include="Animalia\Horse.cs" />
+    <Compile Include="Animalia\Aves\Bird.cs" />
+    <Compile Include="Animalia\Aves\Flamingo.cs" />
+    <Compile Include="Animalia\Aves\Pelican.cs" />
+    <Compile Include="Animalia\Aves\Swan.cs" />
+    <Compile Include="Animalia\Mammalia\Dog.cs" />
+    <Compile Include="Animalia\Mammalia\Hedgehog.cs" />
+    <Compile Include="Animalia\Mammalia\Horse.cs" />
     <Compile Include="Animalia\Worm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
